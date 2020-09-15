@@ -199,7 +199,7 @@ var MacPlayer = {
                 this.PlayFrom = "parse";
             }
         }
-        this.Path = maccms.path + "https://cdn.jsdelivr.net/gh/amidy8/pub/dplayer/";
+        this.Path = maccms.path + "https://cdn.jsdelivr.net/gh/amidy8/pub/dplayer/parse.js";
         if (this.Flag == "down") {
             MacPlayer.Down();
         } else {
