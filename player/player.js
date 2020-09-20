@@ -56,10 +56,10 @@ var vfed = {
 							engine.on('peerId', function(peerId) {
 								$('.load').text('加载0MB 共享0MB 加速0MB');
 								$('.peer').text('P2P已开启');
-								$('.line').text('网站在线1NP');
+								$('.line').text('连接节点1个');
 							});
 							engine.on('peers', function(peers) {
-								$('.line').text('网站在线' + (peers.length + 1) + 'NP');
+								$('.line').text('连接节点' + (peers.length + 1) + '个');
 								$('.peer').text('P2P已开启');
 							});
 							engine.on('stats', function(data) {
