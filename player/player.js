@@ -40,6 +40,7 @@ var vfed = {
 				logo: logo,
 				video: {
 					url: urls,
+					volume: 1.0,
 					type: type,
 					pic: pics,
 					customType: {
