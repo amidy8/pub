@@ -975,8 +975,8 @@
 							e.infoPanel.triggle()
 						}
 					}, {
-						text: "小萝卜解析系统",
-						link: "https://vip.lby.pet"
+						text: "阿米电影",
+						link: "https://amidy.cc"
 					}]), e
 			}
 		},
