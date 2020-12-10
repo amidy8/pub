@@ -903,6 +903,9 @@ var MAC={
     if (event.ctrlKey && window.event.keyCode == 85){
     return false;
     }
+	if (event.ctrlKey && event.shiftKey && window.event.keyCode == 73){
+    return false;
+    }
     if (window.event && window.event.keyCode == 123) {
     event.keyCode = 0;
     event.returnValue = false;
