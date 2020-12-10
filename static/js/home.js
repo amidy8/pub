@@ -899,7 +899,18 @@ var MAC={
         }
     }
 }
-
+    window.oncontextmenu=function(){return false;} 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+    window.event.returnValue = false; 
+        return false; 
+    } 
+    var h = window.innerHeight,w=window.innerWidth; 
+    window.onresize = function () { 
+        if (h!= window.innerHeight||w!=window.innerWidth){ 
+            window.close(); 
+            window.location = "about:blank"; 
+        } 
+    } 
 $(function(){
     //异步加载图片初始化
     MAC.Image.Lazyload.Show();
