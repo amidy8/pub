@@ -899,18 +899,24 @@ var MAC={
         }
     }
 }
-    window.oncontextmenu=function(){return false;} 
-    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
-    window.event.returnValue = false; 
-        return false; 
-    } 
-    var h = window.innerHeight,w=window.innerWidth; 
-    window.onresize = function () { 
-        if (h!= window.innerHeight||w!=window.innerWidth){ 
-            window.close(); 
-            window.location = "about:blank"; 
-        } 
-    } 
+	document.onkeydown = function(){
+    if (event.ctrlKey && window.event.keyCode == 85){
+    return false;
+    }
+    if (window.event && window.event.keyCode == 123) {
+    event.keyCode = 0;
+    event.returnValue = false;
+    }
+    if (event.ctrlKey && window.event.keyCode == 83){
+    return false;
+    }
+    if (window.event && window.event.keyCode == 116) {
+    event.keyCode = 0;
+    event.returnValue = false;
+    }
+    }
+	document.oncontextmenu=new Function("event.returnValue=false");
+	document.onselectstart=new Function("event.returnValue=false");
 $(function(){
     //异步加载图片初始化
     MAC.Image.Lazyload.Show();
