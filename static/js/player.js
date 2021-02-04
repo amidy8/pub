@@ -49,7 +49,6 @@
             player_data.url = unescape(base64decode(player_data.url));
             player_data.url_next = unescape(base64decode(player_data.url_next))
         }
-        this.Prestrain = MacPlayerConfig.prestrain;
         this.Buffer = MacPlayerConfig.buffer;
         this.Second = MacPlayerConfig.second;
         this.Flag = player_data.flag;
