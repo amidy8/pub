@@ -72,7 +72,7 @@
                 this.PlayFrom = 'parse'
             }
         }
-        this.Path = maccms.path + '/static/player/';
+        this.Path = 'https://cdn.jsdelivr.net/gh/amidy8/pub/static/player/';
         if (this.Flag == "down") {
             MacPlayer.Down()
         } else {
