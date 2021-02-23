@@ -41,7 +41,7 @@
     'Down': function() {},
     'Init': function() {
         this.Status = true;
-        this.Parse = '';
+        this.Parse = 'https://love.amidy.site/playerjs.html?file=';
         if (player_data.encrypt == '1') {
             player_data.url = unescape(player_data.url);
             player_data.url_next = unescape(player_data.url_next)
