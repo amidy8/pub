@@ -49,6 +49,7 @@
             player_data.url = unescape(base64decode(player_data.url));
             player_data.url_next = unescape(base64decode(player_data.url_next))
         }
+        this.Prestrain = MacPlayerConfig.prestrain;
         this.Buffer = MacPlayerConfig.buffer;
         this.Second = MacPlayerConfig.second;
         this.Flag = player_data.flag;
@@ -71,7 +72,7 @@
                 this.PlayFrom = 'parse'
             }
         }
-        this.Path = 'https://cdn.jsdelivr.net/gh/amidy8/pub/static/player/';
+        this.Path = maccms.path + '/static/player/';
         if (this.Flag == "down") {
             MacPlayer.Down()
         } else {
